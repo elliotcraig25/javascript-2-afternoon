@@ -142,7 +142,7 @@ user2.email = `tyler.mcginnis@devmounta.in`;
 
 //Code Here
 
-
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -151,7 +151,8 @@ user2.email = `tyler.mcginnis@devmounta.in`;
 
 //Code Here
 
-
+methodCollection.alertHello = function(){alert(`hello`)};
+methodCollection.logHello = function(){console.log(`hello`)};
 
 /*
   Now call your alertHello and logHello methods.
@@ -159,7 +160,8 @@ user2.email = `tyler.mcginnis@devmounta.in`;
 
 //Code Here
 
-
+methodCollection.alertHello;
+methodCollection.logHello;
 
 ////////// PROBLEM 6 //////////
 
@@ -170,7 +172,13 @@ user2.email = `tyler.mcginnis@devmounta.in`;
 
 //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  let newObject = {};
+  newObject[`name`] = name;
+  newObject[`birthday`] = birthday;
+  newObject[`ssn`] = ssn;
+  return newObject;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -181,4 +189,10 @@ user2.email = `tyler.mcginnis@devmounta.in`;
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  let newObject = {};
+  newObject[`cardNumber`] = cardNumber;
+  newObject[`expirationDate`] = expirationDate;
+  newObject[`securityCode`] = securityCode;
+  return newObject;
+};
